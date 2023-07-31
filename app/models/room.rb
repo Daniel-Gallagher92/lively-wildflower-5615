@@ -7,6 +7,8 @@ class Room < ApplicationRecord
   def guest_count
     guests.count
   end
+  #above method is for counting the number of guests in a room
+  
 
   def hotel_name 
     hotel.name

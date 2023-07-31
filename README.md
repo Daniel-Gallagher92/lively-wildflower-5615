@@ -76,6 +76,13 @@ When I visit a guest's show page
 I see the guest's name
 And I see a list of all the rooms they've stayed in
 including the room's suite, nightly rate, and the name of the hotel that it belongs to.
+
+
+For example: you can call guest.rooms, and that will return a list of rooms. Then you can use associations to call the hotel that each room belongs to, like:
+ guest.rooms.each do |room| 
+ room.hotel.name 
+ end
+ because each room belongs to a hotel, and each hotel has a name column on the schema table.
 ```
 
 ```
