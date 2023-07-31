@@ -14,5 +14,4 @@ class Room < ApplicationRecord
     hotel.name
   end
 
-
 end
